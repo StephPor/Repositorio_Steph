@@ -13,3 +13,10 @@ summary(lm_salarios)
 muestra = data.frame(Tiempo_Laboral= c(5L,10L,6L,7L))
 predict(lm_salarios,muestra)
 
+## ggplot ##
+
+ggplot(Estudiantes, aes(x = Tiempo_Laboral)) + geom_bar()
+
+ggplot(Estudiantes, aes(x = Salario)) + geom_bar()
+
+ggplot(Estudiantes, aes(x = Fecha_Nacimiento)) + geom_bar()
